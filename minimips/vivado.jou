@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 27 17:40:53 2020
+# Process ID: 15900
+# Current directory: C:/Users/Stones/Desktop/7 minimipsb3/minimips
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10692 C:\Users\Stones\Desktop\7 minimipsb3\minimips\minimips.xpr
+# Log file: C:/Users/Stones/Desktop/7 minimipsb3/minimips/vivado.log
+# Journal file: C:/Users/Stones/Desktop/7 minimipsb3/minimips\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.xpr}
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.coefficient_file {C:/Users/Stones/Desktop/7 minimipsb3/romnew.coe}] [get_ips irom]
+generate_target all [get_files  {{C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/ip/irom/irom.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/ip/irom/irom.xci}}] -no_script -sync -force -quiet
+reset_run irom_synth_1
+launch_runs -jobs 4 irom_synth_1
+export_simulation -of_objects [get_files {{C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/ip/irom/irom.xci}}] -directory {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.ip_user_files} -ipstatic_source_dir {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.cache/compile_simlib/modelsim} {questa=C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.cache/compile_simlib/questa} {riviera=C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.cache/compile_simlib/riviera} {activehdl=C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+source simu.tcl
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+close_sim

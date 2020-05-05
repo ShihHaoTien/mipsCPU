@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 25 12:06:11 2020
+# Process ID: 12828
+# Current directory: C:/Users/Stones/Desktop/7 minimipsb3/minimips
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19468 C:\Users\Stones\Desktop\7 minimipsb3\minimips\minimips.xpr
+# Log file: C:/Users/Stones/Desktop/7 minimipsb3/minimips/vivado.log
+# Journal file: C:/Users/Stones/Desktop/7 minimipsb3/minimips\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.xpr}
+report_ip_status -name ip_status 
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+upgrade_ip -srcset irom -vlnv xilinx.com:ip:dist_mem_gen:8.0 [get_ips  irom] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips irom] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}}
+file mkdir C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new
+file mkdir C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new
+file mkdir C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new
+file mkdir C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new
+file mkdir C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new
+file mkdir C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new
+file mkdir {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new}
+close [ open {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new/ctrl.v} w ]
+add_files {{C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new/ctrl.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new/ctrl.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new/ctrl.v}}
+file delete -force {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new/ctrl.v}
+close [ open {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new/ctrl.v} w ]
+add_files {{C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/new/ctrl.v}}
+update_compile_order -fileset sources_1
+generate_target all [get_files {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/ip/irom/irom.xci}]
+export_ip_user_files -of_objects [get_files {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/ip/irom/irom.xci}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/ip/irom/irom.xci}}] -directory {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.ip_user_files} -ipstatic_source_dir {C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.cache/compile_simlib/modelsim} {questa=C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.cache/compile_simlib/questa} {riviera=C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.cache/compile_simlib/riviera} {activehdl=C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset irom
+set_property top irom [get_fileset irom]
+move_files -fileset [get_fileset irom] [get_files -of_objects [get_fileset sources_1] {{C:/Users/Stones/Desktop/7 minimipsb3/minimips/minimips.srcs/sources_1/ip/irom/irom.xci}}]
+launch_run irom_synth_1
+wait_on_run irom_synth_1
+
+launch_simulation
+open_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+source simu.tcl
+synth_design -rtl -name rtl_1
+close_sim
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+open_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+source simu.tcl
+update_compile_order -fileset sources_1
+relaunch_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+source simu.tcl
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+source simu.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+source simu.tcl
+relaunch_sim
+relaunch_sim
+current_wave_config {simu_behav.wcfg}
+add_wave {{/simu/test/cpu/rf/GPR[2]}} 
+current_wave_config {simu_behav.wcfg}
+add_wave {{/simu/test/cpu/rf/GPR[1]}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+source simu.tcl
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+open_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+source simu.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+open_wave_config {C:/Users/Stones/Desktop/7 minimipsb3/simu_behav.wcfg}
+source simu.tcl
+close_sim

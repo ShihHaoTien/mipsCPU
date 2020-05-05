@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simu_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="simu" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="854583333fs"></ZoomStartTime>
+      <ZoomEndTime time="1029083334fs"></ZoomEndTime>
+      <Cursor1Time time="935683000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="192"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="65" />
+   <wvobject fp_name="/simu/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/switch" type="array">
+      <obj_property name="ElementShortName">switch[15:0]</obj_property>
+      <obj_property name="ObjectShortName">switch[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/ram/num" type="array">
+      <obj_property name="ElementShortName">num[15:0]</obj_property>
+      <obj_property name="ObjectShortName">num[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/keys" type="array">
+      <obj_property name="ElementShortName">keys[3:0]</obj_property>
+      <obj_property name="ObjectShortName">keys[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/led" type="array">
+      <obj_property name="ElementShortName">led[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/ca" type="array">
+      <obj_property name="ElementShortName">ca[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ca[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/an" type="array">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/ram/scan" type="array">
+      <obj_property name="ElementShortName">scan[3:0]</obj_property>
+      <obj_property name="ObjectShortName">scan[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/ram/timer" type="array">
+      <obj_property name="ElementShortName">timer[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timer[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/Ctrl/stall" type="array">
+      <obj_property name="ElementShortName">stall[5:0]</obj_property>
+      <obj_property name="ObjectShortName">stall[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/Ctrl/stallreq_ID" type="logic">
+      <obj_property name="ElementShortName">stallreq_ID</obj_property>
+      <obj_property name="ObjectShortName">stallreq_ID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/Ctrl/stallreq_EX" type="logic">
+      <obj_property name="ElementShortName">stallreq_EX</obj_property>
+      <obj_property name="ObjectShortName">stallreq_EX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id/ex_hazard" type="logic">
+      <obj_property name="ElementShortName">ex_hazard</obj_property>
+      <obj_property name="ObjectShortName">ex_hazard</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id/mem_hazard" type="logic">
+      <obj_property name="ElementShortName">mem_hazard</obj_property>
+      <obj_property name="ObjectShortName">mem_hazard</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/pc/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/if_pc" type="array">
+      <obj_property name="ElementShortName">if_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">if_pc[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/if_inst" type="array">
+      <obj_property name="ElementShortName">if_inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">if_inst[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/inst_addr" type="array">
+      <obj_property name="ElementShortName">inst_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_addr[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/inst_data" type="array">
+      <obj_property name="ElementShortName">inst_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_data[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id_pc" type="array">
+      <obj_property name="ElementShortName">id_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_pc[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id_inst" type="array">
+      <obj_property name="ElementShortName">id_inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_inst[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/br_flag" type="logic">
+      <obj_property name="ElementShortName">br_flag</obj_property>
+      <obj_property name="ObjectShortName">br_flag</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/br_addr" type="array">
+      <obj_property name="ElementShortName">br_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">br_addr[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/r1addr" type="array">
+      <obj_property name="ElementShortName">r1addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r1addr[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/r1data" type="array">
+      <obj_property name="ElementShortName">r1data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r1data[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/r2addr" type="array">
+      <obj_property name="ElementShortName">r2addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r2addr[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/r2data" type="array">
+      <obj_property name="ElementShortName">r2data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r2data[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id/mem_wraddr_i" type="array">
+      <obj_property name="ElementShortName">mem_wraddr_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wraddr_i[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id/r2read" type="logic">
+      <obj_property name="ElementShortName">r2read</obj_property>
+      <obj_property name="ObjectShortName">r2read</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id/mem_wreg_i" type="logic">
+      <obj_property name="ElementShortName">mem_wreg_i</obj_property>
+      <obj_property name="ObjectShortName">mem_wreg_i</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id/mem_wrdata_i" type="array">
+      <obj_property name="ElementShortName">mem_wrdata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wrdata_i[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id/mem_din_i" type="array">
+      <obj_property name="ElementShortName">mem_din_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_din_i[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id_opr1" type="array">
+      <obj_property name="ElementShortName">id_opr1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_opr1[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id_opr2" type="array">
+      <obj_property name="ElementShortName">id_opr2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_opr2[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id_offset" type="array">
+      <obj_property name="ElementShortName">id_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_offset[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id_aluop" type="array">
+      <obj_property name="ElementShortName">id_aluop[3:0]</obj_property>
+      <obj_property name="ObjectShortName">id_aluop[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id_wreg" type="logic">
+      <obj_property name="ElementShortName">id_wreg</obj_property>
+      <obj_property name="ObjectShortName">id_wreg</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/id_wraddr" type="array">
+      <obj_property name="ElementShortName">id_wraddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">id_wraddr[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_pc" type="array">
+      <obj_property name="ElementShortName">ex_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_pc[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_aluop" type="array">
+      <obj_property name="ElementShortName">ex_aluop[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_aluop[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_opr1" type="array">
+      <obj_property name="ElementShortName">ex_opr1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_opr1[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_opr2" type="array">
+      <obj_property name="ElementShortName">ex_opr2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_opr2[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_offset" type="array">
+      <obj_property name="ElementShortName">ex_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_offset[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_wreg" type="logic">
+      <obj_property name="ElementShortName">ex_wreg</obj_property>
+      <obj_property name="ObjectShortName">ex_wreg</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_wraddr" type="array">
+      <obj_property name="ElementShortName">ex_wraddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_wraddr[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_alures" type="array">
+      <obj_property name="ElementShortName">ex_alures[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_alures[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_m_wen" type="logic">
+      <obj_property name="ElementShortName">ex_m_wen</obj_property>
+      <obj_property name="ObjectShortName">ex_m_wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_m_addr" type="array">
+      <obj_property name="ElementShortName">ex_m_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_m_addr[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/ex_m_dout" type="array">
+      <obj_property name="ElementShortName">ex_m_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_m_dout[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/mem_aluop" type="array">
+      <obj_property name="ElementShortName">mem_aluop[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_aluop[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/mem_alures" type="array">
+      <obj_property name="ElementShortName">mem_alures[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_alures[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/mem_wreg" type="logic">
+      <obj_property name="ElementShortName">mem_wreg</obj_property>
+      <obj_property name="ObjectShortName">mem_wreg</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/mem_wraddr" type="array">
+      <obj_property name="ElementShortName">mem_wraddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wraddr[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/mem_m_wen" type="logic">
+      <obj_property name="ElementShortName">mem_m_wen</obj_property>
+      <obj_property name="ObjectShortName">mem_m_wen</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/mem_m_addr" type="array">
+      <obj_property name="ElementShortName">mem_m_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_m_addr[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/mem_m_dout" type="array">
+      <obj_property name="ElementShortName">mem_m_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_m_dout[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/mem/m_din_i" type="array">
+      <obj_property name="ElementShortName">m_din_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_din_i[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/wb_aluop" type="array">
+      <obj_property name="ElementShortName">wb_aluop[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_aluop[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/wb_alures" type="array">
+      <obj_property name="ElementShortName">wb_alures[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_alures[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/wb_m_din" type="array">
+      <obj_property name="ElementShortName">wb_m_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_m_din[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/wb_wreg" type="logic">
+      <obj_property name="ElementShortName">wb_wreg</obj_property>
+      <obj_property name="ObjectShortName">wb_wreg</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/wb_wraddr" type="array">
+      <obj_property name="ElementShortName">wb_wraddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_wraddr[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simu/test/cpu/wb_wrdata" type="array">
+      <obj_property name="ElementShortName">wb_wrdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_wrdata[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

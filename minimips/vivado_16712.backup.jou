@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Mar 30 13:04:34 2019
+# Process ID: 16712
+# Log file: F:/minimipsb3/minimips/vivado.log
+# Journal file: F:/minimipsb3/minimips\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/minimipsb3/minimips/minimips.xpr
+update_compile_order -fileset sourcereset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+add_files -norecurse -scan_for_includes F:/minimipsb3/minimireset_run impl_1
+sources_1/imports/src/MEM.V
+import_files -norecurse F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/MEM.V
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+add_files -norecurse -scan_for_includes F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/MEM.V
+import_files -norecurse F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/MEM.V
+add_files -norecurse -scan_for_includes {F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/MEM_WB.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/defines.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/Basys3_Top.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/ID.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/EX.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/PC.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/miniMIPS_Top.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/RegFile.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/ID_EX.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/EX_MEM.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/WB.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/IF_ID.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/confreg.v}
+import_files -norecurse {F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/MEM_WB.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/defines.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/Basys3_Top.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/ID.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/EX.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/PC.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/miniMIPS_Top.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/RegFile.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/ID_EX.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/EX_MEM.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/WB.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/IF_ID.v F:/minimipsb3/minimips/minimips.srcs/sources_1/imports/src/confreg.v}
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run irom_synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183A89EA0A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183A89EA0A]
+open_hw_target
+set_property PROGRAM.FILE {F:/minimipsb3/minimips/minimips.runs/impl_1/Basys3_Top.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {F:/minimipsb3/minimips/minimips.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {F:/minimipsb3/minimips/minimips.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/minimipsb3/minimips/minimips.runs/impl_1/Basys3_Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {F:/minimipsb3/minimips/minimips.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/minimipsb3/minimips/minimips.runs/impl_1/Basys3_Top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

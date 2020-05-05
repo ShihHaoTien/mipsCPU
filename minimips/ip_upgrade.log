@@ -1,0 +1,16 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat Apr 25 12:06:55 2020
+| Host         : Stones running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'irom'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of irom (xilinx.com:ip:dist_mem_gen:8.0) from (Rev. 7) to (Rev. 13)
+
